@@ -8,7 +8,7 @@
   - EJs 
 - In this phase users can register as well as login to their account. 
 - To run this project after installing above necessary technologies you just have to open powershell. You can use the "LS" command to see the correct folder and files.
-  After that just type "npm start" command and then copy the resulted server path. for example:- "http://localhost:8000" 
+  - After that just type "npm start" command and then copy the resulted server path. for example:- "http://localhost:8000" 
 - So we can learn lots of new functionalities using express js and ejs.
 
 # Technologies:-
