@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="css/baloonstyle.css">
+</head>
+
+<body>
+
+  <nav class="navbar1">
+    <a href="/"><img class="logo" src="images/balloon4.jpg"> </a>
+    <ul>
+      <li>
+        <h1>The Balloonatic Asylum</h1>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li><a href="/product">Product</a></li>
+      <li><a href="/aboutus">About</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li></li>
+      <% if(authorized){ %>
+        <a class="button button5" href="/logout">Logout</a>
+    <% }else{ %>
+    <a class="button button5" href="/login" >Login</a>
+    <a class="button button5" href="/register">Sign Up</a>
+    <% } %>
+    </ul>
+  </nav>
+  </div>
+  <br> 
+  <nav class="navbar-2">
+    <ul>
+      <li><a href="/search?category=birthday_bouquets">Birthday Bouquest</a></li>
+      <li><a href="/search?category=ballony_occasions">Balloony Occasions</a></li>
+      <li><a href="/search?category=build_ballon_bouquet">Build a Balloon Bouquet</a></li>
+      <li><a href="/search?category=decorating_with_ballons">Decorating with Balloons</a></li>
+      <li><a href="/search?category=ballon_in_bulk">Balloons in Bulk</a></li>
+    </ul>
+  </nav>
+  </div>
+  <div class="producttext">
+    <br>
+    <h1><%= data.products[0].category%></h1>
+   
+  </div>
+  <% for(var i=0; i < data.products.length ; i++) { %>
+    
+    <div class="productcard1" style="display: inline-block; margin-right: 100px;">
+      <a href="/"><img src="<%= data.products[i].imageURL %>" alt="Most Poular" style="width:100%"></a>
+      <h1>
+        <%= data.products[i].productName %>
+      </h1>
+      <br>
+      <h1><p class="proprice">$<%= data.products[i].unitPrice %>
+      </p>
+      </h1>
+      <br>
+      <h4>
+      <p>
+        <%= data.products[i].discription %>
+      </p>
+      </h4>
+      <br>
+      <p><button><a href="/">Add to Cart</a></button></p>
+    </div>
+  
+    <% } %>
+
+      <br><br><br><br><br>
+      <div class="footer">
+        <p>All copyrights are reserved by Bhargav Patel since 1999</p>
+      </div>
+</body>
+
+</html>

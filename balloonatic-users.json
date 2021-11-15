@@ -1,0 +1,26 @@
+{
+    "users":[
+       {
+          "first_name":"Bhargavp",
+          "last_name":"Patel",
+          "email":"bhargavpatel2286@gmail.com",
+          "phone":"123-456-7899",
+          "address":"77 forest road ,west haven",
+          "city":"west haven",
+          "state_code":"CT",
+          "postalcode":"06516",
+          "password":"Bhargav2286"
+       },
+       {
+          "first_name":"Yashvi",
+          "last_name":"Mendapara",
+          "email":"yashvi@gmail.com",
+          "phone":"152-525-9969",
+          "address":"123 surat",
+          "city":"new haven",
+          "state_code":"CT",
+          "postalcode":"06110",
+          "password":"Yashvi1234"
+       }
+    ]
+ }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us Page</title>
+  <link rel="stylesheet" href="css/baloonstyle.css">
+</head>
+
+<body>
+  <nav class="navbar1">
+    <a href="/"><img class="logo" src="images/balloon4.jpg"> </a>
+    <ul>
+      <li>
+        <h1>The Balloonatic Asylum</h1>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li><a href="/product">Product</a></li>
+      <li><a href="/aboutus">About</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li></li>
+      <% if(authorized){ %>
+        <a class="button button5" href="/logout">Logout</a>
+    <% }else{ %>
+    <a class="button button5" href="/login" >Login</a>
+    <a class="button button5" href="/register">Sign Up</a>
+    <% } %>
+    </ul>
+  </nav>
+  </div>
+  <br>
+  <nav class="navbar-2">
+    <ul>
+      <li><a href="/search?category=birthday_bouquets">Birthday Bouquest</a></li>
+      <li><a href="/search?category=ballony_occasions">Balloony Occasions</a></li>
+      <li><a href="/search?category=build_ballon_bouquet">Build a Balloon Bouquet</a></li>
+      <li><a href="/search?category=decorating_with_ballons">Decorating with Balloons</a></li>
+      <li><a href="/search?category=ballon_in_bulk">Balloons in Bulk</a></li>
+    </ul>
+  </nav>
+  <br> <br> <br>
+  </div>
+  <div class="contactpic"> <img src="images/contact.jpg"> </div>
+  <div class="center-con">
+    <p> <b>Please contact Us for any quarries 24/7.
+    If you have questions or feedback about an order,offfers and services do not hesistate to contact here.
+    If you want special kind of decoration as per your choice send us email with picture.
+    </b></p>
+    <br>
+    <h4> Office Address:- 149 Elm St, New Haven, CT 06511 </h4>
+    <h4> Email  Address:- customer-support@tba.com </h4>
+    <h4> Contact number:- +1-203-432-2300. </h4>
+  </div>
+
+  <div class="contactmail">
+    <h2>Enter Your Email Address For Subscription And Get good Offers:-</h2>
+    <form name="Subscription" action="/">
+      <input type='text' name='inputtext' id=intput placeholder="please Type here!" required />
+      <div class="button1"> <input type="submit" name="Subscribe Here!" value="Subscribe Here!"
+          onclick="ValidateEmail(document.Subscription.inputtext)" /></div>
+    </form>
+  </div>
+  <br><br><br><br><br>
+
+  <script type="text/javascript" src="js/ballonindex.js"></script>
+
+  <div class="footer">
+    <p>All copyrights are reserved by Bhargav Patel since 1999</p>
+  </div>
+</body>
+
+</html>

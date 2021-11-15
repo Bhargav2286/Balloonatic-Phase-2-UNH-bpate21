@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>404 error</title>
+    <link rel="stylesheet" href="css/baloonstyle.css">
+    
+</head>
+
+<body>
+    <nav class="navbar1">
+        <a href="/"><img class="logo" src="images/balloon4.jpg"> </a>
+        <ul>
+            <li>
+                <h1>The Balloonatic Asylum</h1>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+            <li><a href="/product">Product</a></li>
+            <li><a href="/aboutus">About</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li></li>
+            <% if(authorized){ %>
+                <a class="button button5" href="/logout">Logout</a>
+            <% }else{ %>
+            <a class="button button5" href="/login" >Login</a>
+            <a class="button button5" href="/register">Sign Up</a>
+            <% } %>
+
+        </ul>
+    </nav>
+    <nav class="navbar-2">
+        <ul>
+          <li><a href="/search?category=birthday_bouquets">Birthday Bouquest</a></li>
+          <li><a href="/search?category=ballony_occasions">Balloony Occasions</a></li>
+          <li><a href="/search?category=build_ballon_bouquet">Build a Balloon Bouquet</a></li>
+          <li><a href="/search?category=decorating_with_ballons">Decorating with Balloons</a></li>
+          <li><a href="/search?category=ballon_in_bulk">Balloons in Bulk</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="text-align: center;margin-top: 10%;font-size: larger;">
+        <h1>500</h1>
+        <h1>Internal Sever Error</h1>
+    </div>
+    
+    <div class="footer">
+        <p>All copyrights are reserved by Bhargav Patel since 1999</p>
+    </div>
+</body>
+
+</html>

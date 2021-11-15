@@ -1,0 +1,51 @@
+{
+    "quotes": [
+        {
+            "headres1": "ABOUT BALLOONS",
+            "quotes": [
+                {
+                    "title": "",
+                    "discription": "-- Balloons are used by customores to decorate birthday parties, wedding ceremoneies, Promotion parties as well as in baby shower too."
+                },
+                {
+                    "title": "Table Decorations",
+                    "discription": "We suggest three latex or two foil balloons per decoration. For latex 3 works well, Foil balloons are unique because you can get something else so two per table is great idea."
+                },
+                {
+                    "title": "Floor Decorations",
+                    "discription": "We recommend atleast 5 latex balloons per decoration and a minimum of 3 foils. You can also add balloons but once you go out there seven latex balloons you just take up space without adding much to the effect"
+                }
+            ]
+        },
+        {
+            "headres2": "VISION STATEMENT",
+            "quotes": [
+                {
+                    "title1": "Ribbon",
+                    "discription1": "For each assembly you will need a weight which wants to be strong enough to support all the balloons and ribbon. For table garlands you need about 2.00 metres per balloon, for floor decorations you take about 2.50m per balloon."
+                },
+                {
+                    "title1": "Disposable canisters",
+                    "discription1": "Small containers can be found from some supermarkets such as family dollars, and walmart or you may find some on-line . These containers will fill between 20- 25 10 diameter balloons."
+                }
+            ]
+        },
+        {
+            "headres3": "VISION",
+            "quotes": [
+                {
+                    "title2": "Herman Melville.",
+                    "discription2": "'There is a savor of life and immortality in the substantial fare. Like balloons, we are nothing till filled.'"
+                },
+                {
+                    "title2": "Thomas Bailey Aldrich.",
+                    "discription2": "'A man should have duties outside of himself; without them, he is a mere balloon, inflated with thin egotism and drifting nowhere.'"
+                },
+                {
+                    "title2": "Cassandra Clare.",
+                    "discription2": "'When one steals a flying balloon and animates it to fly over Paris, one should, ideally, have some idea how said balloon normally works.'"
+                }
+            ]
+        }
+    ]
+}

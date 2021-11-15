@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/baloonstyle.css">
+</head>
+
+<body>
+  <nav class="navbar1">
+    <a href="/"><img class="logo" src="images/balloon4.jpg"> </a>
+
+    <ul>
+      <li>
+        <h1>The Balloonatic Asylum</h1>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+
+      <li><a href="/product">Product</a></li>
+      <li><a href="/aboutus">About</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+      <li></li>
+      <% if(authorized){ %>
+        <a class="button button5" href="/logout">Logout</a>
+    <% }else{ %>
+    <a class="button button5" href="/login" >Login</a>
+    <a class="button button5" href="/register">Sign Up</a>
+    <% } %>
+    </ul>
+  </nav>
+  </div>
+  <br>
+  <nav class="navbar-2">
+    <ul>
+      <li><a href="/search?category=birthday_bouquets">Birthday Bouquest</a></li>
+      <li><a href="/search?category=ballony_occasions">Balloony Occasions</a></li>
+      <li><a href="/search?category=build_ballon_bouquet">Build a Balloon Bouquet</a></li>
+      <li><a href="/search?category=decorating_with_ballons">Decorating with Balloons</a></li>
+      <li><a href="/search?category=ballon_in_bulk">Balloons in Bulk</a></li>
+    </ul>
+  </nav>
+  </div>
+
+  <div class="slide-box">
+
+    <div class="Slideshow box">
+      <div class="num">1 / 5</div>
+      <img src="images/home1.png" style="width:100%">
+      <div class="text">Best Balloon decoration here</div>
+    </div>
+
+    <div class="Slideshow box">
+      <div class="num">2 / 5</div>
+      <img src="images/home3.jpg" style="width:100%">
+      <div class="text">Various kinds of Balloons sold here</div>
+    </div>
+
+    <div class="Slideshow box">
+      <div class="num">3 / 5</div>
+      <img src="images/home4.jpg" style="width:100%">
+      <div class="text">Contact us for decoration in any kind of party. </div>
+    </div>
+
+    <div class="Slideshow box">
+      <div class="num">4 / 5</div>
+      <img src="images/home1.png" style="width:100%">
+      <div class="text">Buy balloons from here</div>
+    </div>
+
+    <div class="Slideshow box">
+      <div class="num">5 / 5</div>
+      <img src="images/home3.jpg" style="width:100%">
+      <div class="text">Want help contact 24/7</div>
+    </div>
+
+
+
+    <a class="slide-next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="picdot" onclick="currentSlide(1)"></span>
+    <span class="picdot" onclick="currentSlide(2)"></span>
+    <span class="picdot" onclick="currentSlide(3)"></span>
+    <span class="picdot" onclick="currentSlide(4)"></span>
+    <span class="picdot" onclick="currentSlide(5)"></span>
+  </div>
+
+  <script type="text/javascript" src="js/ballonindex.js"></script>
+  <div class="center">
+    <p>Price that makes customers happy:).
+        We sell various custom made for you! 
+        You choose heights, colors and designs.
+        Pre-priced decoration packages available or you can purchase. 
+        Also we will provide pickup for any decoration with hardware-
+        We set up at your place; you do not have to worry anything!</p>
+    <br>
+    <h1> “There’s no shortage of remarkable ideas, what’s missing is the will to execute them.” – Seth Godin"</h1>
+  </div>
+
+  <div class="left-box">
+    <% for(var i=0; i < data.length ; i++) { %>
+      <% for(var j=0; j < data[i].quotes.length ; j++) { %>
+        <h1>
+          <%= data[i].quotes[j].title %>
+        </h1>
+        <p>
+          <%= data[i].quotes[j].discription %>
+        </p>
+        <% } %>
+          <% } %>
+
+  </div>
+  <div class="right-box">
+
+    <% for(var i=0; i < data.length ; i++) { %>
+      <% for(var j=0; j < data[i].quotes.length ; j++) { %>
+        <h1>
+          <%= data[i].quotes[j].title1 %>
+        </h1>
+        <p>
+          <%= data[i].quotes[j].discription1 %>
+        </p>
+        <% } %>
+          <% } %>
+  </div>
+
+  <aside class="center-box">
+
+    <% for(var j=0; j < data[2].quotes.length ; j++) { %>
+      <h3>
+        <%= data[2].quotes[j].discription2 %>
+        <br> <br>
+          <h1> - <%= data[2].quotes[j].title2 %>
+          </h1>
+          <br>
+      </h3>
+      <% } %>
+
+  </aside>
+  <br><br><br><br><br><br> <br> <br> <br>
+  <div class="footer">
+    <p>All copyrights are reserved by Bhargav Patel since 1999</p>
+  </div>
+</body>
+
+</html>
