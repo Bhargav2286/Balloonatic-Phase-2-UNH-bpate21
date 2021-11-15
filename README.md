@@ -11,7 +11,7 @@
   - After that just type "npm start" command and then copy the resulted server path. for example:- "http://localhost:8000" 
 - So we can learn lots of new functionalities using express js and ejs.
 
-# Technologies:-
+# Used Technologies:-
 - EXPRESS JS
 - Node JS
 - HTML
@@ -19,5 +19,3 @@
 - JAVASCRIPT
 - BOOTSTRAP
 
-# Creator:-
-- Bhargav Patel (https://github.com/Bhargav2286)
