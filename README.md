@@ -14,6 +14,7 @@
 # Used Technologies:-
 - EXPRESS JS
 - Node JS
+- Embedded Javascript Templating(EJS)
 - HTML
 - CSS
 - JAVASCRIPT
